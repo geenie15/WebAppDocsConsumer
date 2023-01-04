@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Netflicks 2.0</title>
+
+      <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+      <script type="text/javascript" src="JS/bootstrap.js"></script>
+      <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+
+      <script type="text/javascript" src="JS/app.js"></script>
+
+  </head>
+  
+  <body>
+
+    <div  class="container">
+
+        <!--Header-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: center;">
+              <h3>Netflicks 2.0</h3>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+        <!--New Asset Box-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+              <p>Complete the form to enrol</p>
+
+              <form style="font-size: 10pt;" id="newUserForm">
+                <div class="mb-3">
+                  <label for="FirstName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="NewFirstName">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Surname" class="form-label">Surname</label>
+                  <input type="text" class="form-control" id="NewSurname">
+                </div>
+
+                <div class="mb-3">
+                  <label for="EmailAddress" class="form-label">Email Address</label>
+                  <input type="text" class="form-control" id="NewEmailAddress">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Password" class="form-label">Password</label>
+                  <input type="string" class="form-control" id="NewPassword">
+                </div>
+
+                <button type="button" id="subNewForm" class="btn btn-primary">Sign Up</button> <br/><br/>
+                
+              </form>
+
+              <form style="font-size: 10pt;" id="currentUserForm">
+              <div class="mb-3">
+                <label for="EmailAddress" class="form-label">Email Address</label>
+                <input type="text" class="form-control" id="CurrentEmailAddress">
+              </div>
+
+              <div class="mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input type="string" class="form-control" id="CurrentPassword">
+              </div>
+
+              <button type="button" id="subCurrentForm" class="btn btn-primary">Login</button> <br/><br/>
+            </div>
+          </form>
+
+            <div class="col-2"  ></div>
+        </div>
+
+        <!-- view Asset Area-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: left;" >
+              <!-- <div style="padding:5px;">
+                <button  id = "retImages" type="button" class="btn btn-primary">View Videos</button>
+              </div> -->
+
+              <div id="ImageList">
+
+                <h4>Please enrol if you wish to view videos on the system.</h4>
+
+              </div>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+    </div>
+  
+  </body>
+</html>
