@@ -60,25 +60,34 @@
                 <button type="button" id="subNewForm" class="btn btn-primary">Sign Up</button> <br/><br/>
                 
               </form>
-           
-              <div class="mb-3">
-                <h4> Search by Genre </h4>
-                <button type="button" id="Horror" class="btn btn-primary">Horror</button> <br/><br/>
-                <button type="button" id="Comedy" class="btn btn-primary">Comedy</button> <br/><br/>
-                <button type="button" id="Action" class="btn btn-primary">Action</button> <br/><br/>
-                <button type="button" id="Children's" class="btn btn-primary">Children's</button> <br/><br/>
-              </div>
+              
+           <form style="font-size: 10pt;" id="GenreSearchForm">
+                <div class="mb-3">
+                  <label for="Genre" class="form-label">Genre</label>
+                  <select name="Genres" id="Genre" required>
+                    <option value = "Horror"> Horror </option>
+                    <option value = "Comedy"> Comedy </option>
+                    <option value = "Action"> Action </option>
+                    <option value = "Children's"> Children's </option>
+                  </select>
+                </div>
+             <button type="button" id="GenreSearchForm" class="btn btn-primary">Search</button> <br/><br/>
+               </form>
+              
+               <form style="font-size: 10pt;" id="AgeSearchForm">
+                 <div class="mb-3">
+                  <label for="AgeRating" class="form-label">Age Rating</label>
+                  <select name="Ages" id="AgeRating" required>
+                    <option value = "PG"> PG </option>
+                    <option value = "12"> 12 </option>
+                    <option value = "15"> 15 </option>
+                    <option value = "18"> 18 </option>
+                  </select>
+                </div>
 
-              <div class="mb-3">
-                <h4> Search by Age Rating </h4>
-                <button type="button" id="PG" class="btn btn-primary">PG</button> <br/><br/>
-                <button type="button" id="12" class="btn btn-primary">12</button> <br/><br/>
-                <button type="button" id="15" class="btn btn-primary">15</button> <br/><br/>
-                <button type="button" id="18" class="btn btn-primary">18</button> <br/><br/>
-              </div>
-
-              <button type="button" id="subCurrentForm" class="btn btn-primary">Login</button> <br/><br/>
+              <button type="button" id="AgeSearchForm" class="btn btn-primary">Search</button> <br/><br/>
             </div>
+             
 
 
             <div class="col-2"  ></div>
