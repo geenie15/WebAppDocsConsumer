@@ -59,10 +59,10 @@ function getVideoList(){
  $.each( data, function( key, val ) {
 items.push( "<hr />");
 items.push("<video controls width='320'> <source src='"+BLOB_ACCOUNT + val["filepath"] +"' height='40'/> </video> <br />")
-items.push( "File : " + val["fileName"] + "(Genre: " +val["Genre"]+") <br />");
+items.push( "File : " + val["fileName"] + "(Genre: " +val["genre"]+") <br />");
 items.push( "Uploaded by: " + val["userName"] + " (user id: "+val["userID"]+")<br />");
-items.push( "Age Rating: " + val["AgeRating"] +"<br />");
-items.push( "Producer: " + val["Producer"] +"<br />");
+items.push( "Age Rating: " + val["ageRating"] +"<br />");
+items.push( "Producer: " + val["producer"] +"<br />");
 items.push( "<hr />");
  });
  //Clear the assetlist div
