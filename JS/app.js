@@ -31,12 +31,9 @@ $(document).ready(function () {
     submitNewAsset();
     toggleGenreSearch();
     toggleAgeSearch();
+    getVideoList()
   });
   
-    $("#subNewForm").click(function () {
-    //Execute the submit new asset function
-    getVideoList();
-  });
 
   $("#ActionSearch").click(function () {
     getActionList();
