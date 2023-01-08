@@ -31,10 +31,6 @@ $(document).ready(function () {
     submitNewAsset();
     toggleGenreSearch();
     toggleAgeSearch();
-  });
-
-  $("#subNewForm").click(function () {
-    //Run the get asset list function
     getVideoList();
   });
 
